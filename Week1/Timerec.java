@@ -7,9 +7,13 @@ class recTcpT{
 		Socket s = ss.accept();
 		DataInputStream din = new DataInputStream(s.getInputStream());
 		String S = (String)din.readUTF();
-		String b = (String)din.readUTF();
-		System.out.println("Data is "+S+" sent at "+b);
-		System.out.println("Received at "+java.time.LocalTime.now());
+		
+		String b1=java.time.LocalTime.now().toString();
+		//din.flush();
+		//String b = (String)din.readUTF();
+		System.out.println("Data is (Followed by time) "+S);
+		s.close();
+		System.out.println("Received at "+b1);
 		
 	}
 }

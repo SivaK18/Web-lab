@@ -9,8 +9,10 @@ class sendTcpT{
 		String S = "Hello World";
 		String b = java.time.LocalTime.now().toString();
 		
-		dout.writeUTF(S);
-		System.out.println("send at "+b);
+		dout.writeUTF(S+" "+b);
+		dout.flush(); 
 		dout.writeUTF(b);
+		s.close();
+		System.out.println("send at "+b);		
 	}
 }
