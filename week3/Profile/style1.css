@@ -1,0 +1,22 @@
+table th,td{
+	border: 2px solid black;
+	border-collapse : collapse;
+	padding : 15px;
+  
+}
+th{
+	text-align : center;
+}
+table{
+	border-spacing :5px;
+	
+}
+#mark{
+	font-family: Arial;
+	font-weight:bdd;
+	color: #ff0000;
+}
+#mark:hover
+{
+	transform : translate(0%,-20%);
+}

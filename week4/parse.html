@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Currently in transit </h1>
+<button type = "button" onclick ="loadXMLDOC()">
+Get List </button>
+<p id="demo"></p>
+<script>
+function loadXMLDOC()
+{
+var xmlhttp= new XMLHttpRequest();
+xmlhttp.onreadystatechange = function()
+{
+if(this.readystatus==4 && this.status==200)
+{
+//myFunction(this);
+
+var txt="";
+x=this.response;
+
+document.getElementbyID("demo").innerHTML=x;
+}
+};
+xmlhttp.open("GET","shipping.xml",true);
+xmlhttp.send();
+
+}
+//Function myFunction(xml)
+//
+</script>
+</Body>
+</HTML>
+
+
+

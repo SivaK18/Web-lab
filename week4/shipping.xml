@@ -1,0 +1,22 @@
+<shipping>
+<item>
+<name> Siva Kailash </name>
+<alert> Fragile </alert>
+<street> Thrupur kumaran street </street>
+<city> Chengalpattu </city> 
+<weight> 0.5 kg </weight>
+</item>
+<item>
+<name> Siva Kailash </name>
+<alert> mobile </alert>
+<street> mettu street </street>
+<city> Coimbatore </city> 
+<weight> 5.5 kg </weight>
+</item>
+<item>
+<name> Kumar </name>
+<alert> wood </alert>
+<street> nadu road </street>
+<city> Chennai </city> 
+<weight> 5 kg </weight>
+</item>
