@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<html>
+<head>
+<script>
+var fn=0;
+function mod(x){
+	document.getElementsByTagName('input')[0].checked
+	fn+=x;
+	document.getElementById("cost").innerText=fn;
+	
+	}
+	
+function sub(){
+	var dis="   Cost: "+fn+"\n"+"   Tax: "+.05*fn+"\n"+"   Total: "+1.05*fn
+	alert(dis)
+}
+
+
+function ld(){
+console.log(100);
+
+document.getElementsByTagName("input")[0].addEventListener("click",function(){mod((this.checked?1:-1)*59)})
+document.getElementsByTagName("input")[1].addEventListener("click",function(){mod((this.checked?1:-1)*49)})
+document.getElementsByTagName("input")[2].addEventListener("click",function(){mod((this.checked?1:-1)*39)})
+alert("Event Listners Added");
+}
+document.onload=setTimeout(function(){ld()},1000);
+</script>
+</head>
+<body>
+<h1 align="center">DOM based</h1>
+<div align="center">
+<form>
+<input type="checkbox" > Apples </input>
+<input type="checkbox"> Orange </input>
+<input type="checkbox"> Banana </input>
+<br>
+<input type="submit" onclick="sub()"></input>
+</form>
+<p id="cost">
+</p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+       Apple
+        <input type="checkbox" id="a" value = "Four 25-watt light bulbs for $2.39" name="a" onclick="calc()" >  <br>  
+       Orange
+        <input type="checkbox" id ="0" value = "Eight 25-watt light bulbs for $4.29" name="o" onclick="calc1()"> <br>
+       Pineapple 
+        <input type="checkbox" id="p" value = "Four 25-watt long-life light bulbs for $3.95" name="P" onclick="calc2()"><br>
+       <input type="button" value = "buy" onclick="alert1()">  
+       
+        <script>
+             var x=0;
+             var a,o,p;
+             var flag1=0;
+             var flag2=0;
+             var flag3=0;
+             var x5=0;
+            function calc()
+            {     
+                flag1+=1;
+                if(flag1%2 === 0){
+                    alert("Apple is disselected");
+                    x5=x5-59;
+                    
+                }
+                else {
+                alert("apple is selected cost is 59 cents");
+                a=59;x5=x5+59;
+            }
+            }
+            function calc1()
+            {     
+                flag2+=1;
+                if(flag2%2 === 0){
+                    alert("Orange is disselected");
+                    o=0;x5=x5-49;
+                }
+                else {
+                    alert("Orange is selected cost is 49 cents");
+                    o=49;x5=x5+49;
+                }
+                    
+                
+            }
+            function calc2()
+            {     
+                flag3+=1;
+                if(flag3%2 === 0){
+                    alert("Pineapple is disselected");
+                    x=x-39;
+                    p=0;x5=x5-39;
+                }
+                else {
+                alert("Pineapple is selected cost is 39 cents");
+                p=39;x5=x5+39;
+            }
+            }
+            function alert1()
+            {
+                
+                var x3=(5/100)*x5;
+                var x4=x3+x5;
+                var x2="original cost is "+x5+"\nAnd "+x4+" inclusive of taxes"; 
+                alert(x2);
+            }
+            
+            </script>
+    </body>
+</html>
