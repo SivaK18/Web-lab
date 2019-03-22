@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h3>JSON</h3>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc(){
+var obj={"name":"First Name","age":30,"city":"Mycity"};
+document.getElementById("demo").innerHTML=JSON.stringify(obj);
+}
+</script>
+
+</body>
+</html>

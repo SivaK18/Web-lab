@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h3>JSON</h3>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc(){
+var obj={"o":[{"name":"First Name","Author":"Author one"},{"name":"TWO Name","Author":"Author TWO"},{"name":"THREE Name","Author":"Author THREE"},{"name":"FOURTH Name","Author":"Author FOUR"}]};
+var i=0;
+document.getElementById("demo").innerText="";
+for (i=0;i<obj.o.length;i++){
+document.getElementById("demo").append(JSON.stringify(obj.o[i].name+"  "));
+}
+}
+</script>
+
+</body>
+</html>
